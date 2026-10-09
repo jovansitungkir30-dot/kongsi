@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+.card {
+  @apply rounded-xl border border-slate-200 bg-white shadow-sm;
+}
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-50;
+}
+.btn-buy {
+  @apply btn bg-brand-500 text-white hover:bg-brand-600;
+}
+.btn-ghost {
+  @apply btn border border-slate-300 bg-white text-slate-700 hover:bg-slate-100;
+}
+.input {
+  @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500;
+}
+.label {
+  @apply mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500;
+}
